@@ -6,7 +6,7 @@ from openai import OpenAI
 
 # Initialize OpenAI client (configured to use gpt-4.1-mini/nano for processing)
 # Note: For real embedding models like BGE-M3, we would typically use sentence-transformers.
-# In this sandbox, we will simulate the pipeline logic.
+# In this, we will simulate the pipeline logic.
 client = OpenAI()
 
 class SaudiLegalPipeline:
