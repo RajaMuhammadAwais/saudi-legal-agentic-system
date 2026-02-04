@@ -1,0 +1,29 @@
+[
+  {
+    "answer": "Under Saudi Labor Law, a valid employment contract must include mandatory elements such as: 1) Identification of the contracting parties—the employer and the employee; 2) Description of the job or the nature of the work to be performed; 3) The duration of the contract, specifying whether it is limited or unlimited; 4) The agreed wage or salary, including methods and timing of payment; and 5) Working hours and leave entitlements. These requirements ensure clarity of obligations and rights for both parties and are stipulated to provide legal certainty for employment relationships.",
+    "sources": [
+      "Saudi Labor Law, Articles 31-38"
+    ],
+    "jurisdiction": "Saudi Arabia",
+    "confidence": "High"
+  },
+  {
+    "answer": "Under Saudi Arabia's Labor Law, the regulations on working hours and overtime compensation are primarily addressed in Articles 98 and 99 (or 100, depending on the version). Article 98 stipulates that the maximum working hours are eight hours per day or forty-eight hours per week. Any work performed beyond these hours is considered overtime. Article 99 (or 100) requires that overtime work be compensated at a rate of no less than 150% of the employee's regular wage. These provisions ensure employees are both limited to reasonable working hours and fairly compensated for additional work beyond those limits.",
+    "sources": [
+      "Saudi Labor Law, Article 98",
+      "Saudi Labor Law, Article 99",
+      "Saudi Labor Law, Article 100"
+    ],
+    "jurisdiction": "Saudi Arabia",
+    "confidence": "high"
+  },
+  {
+    "answer": "Under Article 80 of the Saudi Labor Law, an employer has the right to terminate an employment contract without prior notice if the employee commits a serious breach of their obligations, such as misconduct. However, the legal procedure requires that the employer must have clear, documented proof of the misconduct. While the law permits immediate termination for just cause, procedural safeguards generally should be observed, including informing the employee of the accusations and providing an opportunity to respond before dismissal. This ensures that the termination is legally defensible and helps prevent potential disputes or claims of unfair dismissal. In summary, termination under Article 80 is permissible without notice, but must be supported by evidence and comply with procedural fairness under Saudi labor regulations.",
+    "sources": [
+      "Saudi Labor Law, Article 80",
+      "Saudi Ministry of Labor regulations and guidelines"
+    ],
+    "jurisdiction": "Saudi Arabia",
+    "confidence": "high"
+  }
+]
