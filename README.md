@@ -9,6 +9,7 @@ This system utilizes a decentralized architecture of seven specialized agents to
 ### Key Features
 
 - **Agent Lightning Architecture**: High-speed multi-agent disaggregation for low-latency legal research.
+- **Self-Improving Feedback Loop**: Automated performance analysis and prompt optimization based on execution history.
 - **Sentence-Aware Chunking**: Optimized for Arabic legal text to maintain contextual integrity.
 - **Parallel Multi-Agent Orchestration**: Asynchronous processing through QueryPlanner, Retriever, Verifier, Critic, and Synthesizer agents.
 - **Verification Priority**: Strict policy-based generation where only 100% verified claims are included in final answers (90-94% accuracy target).
@@ -16,7 +17,7 @@ This system utilizes a decentralized architecture of seven specialized agents to
 
 ## Project Structure
 
-- `saudi_legal_lightning.py`: **[LATEST]** Optimized high-speed orchestration engine using Agent Lightning principles.
+- `saudi_legal_lightning.py`: **[LATEST]** Optimized high-speed orchestration engine using Agent Lightning principles with self-improvement capabilities.
 - `saudi_legal_system_real.py`: Real-world RAG implementation with document ingestion.
 - `lightning_optimization.md`: Technical documentation for Agent Lightning architecture.
 - `system_architecture_v2.md`: Core system design and multi-agent framework.
