@@ -31,13 +31,20 @@ class SaudiLegalLightning:
                 sentences = [s.strip() for s in self.sentence_splitter.split(text) if len(s.strip()) > 10]
                 self.kb_chunks = [" ".join(sentences[i:i + 8]) for i in range(0, len(sentences), 6)]
 
-    async def _call_agent_async(self, role: str, system_prompt: str, user_input: str, model: str = DEEP_MODEL) -> str:
-        """Asynchronous agent call for parallel execution."""
+    async def _call_agent_async(self, role: str, user_input: str, model: str = DEEP_MODEL, extra_context: str = "") -> str:
+        """Asynchronous agent call for parallel execution using externalized prompts."""
+        with open("agent_prompts.json", "r") as f:
+            prompts = json.load(f)
+        
+        system_prompt = prompts.get(role, {}).get("system_prompt", "")
+        if extra_context:
+            system_prompt += f" Additional Context: {extra_context}"
+
         loop = asyncio.get_event_loop()
         response = await loop.run_in_executor(None, lambda: self.client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": f"You are the {role} Agent. {system_prompt}"},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
             ],
             temperature=0
@@ -61,33 +68,27 @@ class SaudiLegalLightning:
         start_time = time.time()
 
         # 1. Parallel Phase: Triage & Planning
-        # Triage Agent (Fast-Path) checks if this is a simple query
-        # QueryPlanner (Deep-Path) prepares detailed tasks
-        triage_task = self._call_agent_async("Triage", "Determine if this query is simple or complex. Return 'FAST' or 'DEEP'.", query, model=FAST_MODEL)
-        planner_task = self._call_agent_async("QueryPlanner", "Decompose this Saudi legal query into search sub-tasks.", query)
+        triage_task = self._call_agent_async("Triage", query, model=FAST_MODEL)
+        planner_task = self._call_agent_async("QueryPlanner", query)
         
         triage_result, plan = await asyncio.gather(triage_task, planner_task)
         print(f"Triage: {triage_result} | Plan generated.")
 
         # 2. Retrieval Phase
-        # In Lightning mode, we do an immediate fast-retrieve based on the query
         retrieved_docs = self._fast_retrieve(query)
         
         # 3. Parallel Phase: Extraction & Verification
-        # While the LegalExtractor pulls entities, the Critic starts looking for general jurisdiction risks
-        extraction_task = self._call_agent_async("LegalExtractor", "Extract Articles and Rules.", str(retrieved_docs), model=FAST_MODEL)
-        critic_pre_check = self._call_agent_async("Critic", "Provide a pre-check on common pitfalls for this type of Saudi legal query.", query, model=FAST_MODEL)
+        extraction_task = self._call_agent_async("LegalExtractor", str(retrieved_docs), model=FAST_MODEL)
+        critic_pre_check = self._call_agent_async("Critic", query, model=FAST_MODEL)
         
         extracted, pre_critique = await asyncio.gather(extraction_task, critic_pre_check)
 
         # 4. Final Verification & Synthesis (Deep-Path)
-        # Final check for 90-94% accuracy requirement
         final_verification = await self._call_agent_async("Verifier", 
-            f"Verify extraction against sources. Pre-check advice: {pre_critique}", 
-            f"Query: {query}\nExtraction: {extracted}\nSources: {retrieved_docs}")
+            f"Query: {query}\nExtraction: {extracted}\nSources: {retrieved_docs}",
+            extra_context=f"Pre-check advice: {pre_critique}")
 
         final_answer_json = await self._call_agent_async("Synthesizer", 
-            "Output JSON with keys: answer, sources, jurisdiction, confidence (0.0-1.0).", 
             f"Query: {query}\nVerified: {final_verification}")
 
         end_time = time.time()
