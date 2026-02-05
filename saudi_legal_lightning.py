@@ -4,7 +4,11 @@ import os
 import time
 import asyncio
 from typing import List, Dict, Any
+from dotenv import load_dotenv
 from openai import OpenAI
+
+# Load environment variables from a local .env file (if present)
+load_dotenv()
 
 # Configuration for Lightning Architecture
 FAST_MODEL = "gpt-4.1-nano" # High-speed model for initial triage and simple extraction
