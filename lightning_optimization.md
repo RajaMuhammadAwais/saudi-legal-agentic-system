@@ -1,6 +1,6 @@
 # Agent Lightning Optimization: Saudi Legal System
 
-**Author**: Manus AI
+**Author**: Raja Muhammad Awais
 
 **Date**: February 4, 2026
 
