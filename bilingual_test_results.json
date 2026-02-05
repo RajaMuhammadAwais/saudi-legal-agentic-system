@@ -1,0 +1,63 @@
+{
+  "test_date": "2026-02-05",
+  "total_scenarios": 4,
+  "results": [
+    {
+      "scenario_id": "EN_LABOR_01",
+      "language": "English",
+      "category": "Contract Law",
+      "query": "What are the specific conditions for a valid non-compete clause in a Saudi employment contract?",
+      "execution_time": "11.45s",
+      "result": {
+        "answer": "The provided source documents do not contain information on the specific conditions for a valid non-compete clause in a Saudi employment contract. There are no details regarding requirements such as reasonable duration, geographic scope, legitimate business interest protection, compensation, clarity, or compliance with public policy. Therefore, based on the available sources, it is not possible to specify the conditions for a valid non-compete clause under Saudi employment law.",
+        "sources": [],
+        "jurisdiction": "Kingdom of Saudi Arabia",
+        "confidence": 1.0
+      }
+    },
+    {
+      "scenario_id": "AR_LABOR_01",
+      "language": "Arabic",
+      "category": "Resignation/Notice Period",
+      "query": "ما هي شروط الاستقالة في نظام العمل السعودي وما هي مدة الإخطار المطلوبة؟",
+      "execution_time": "9.03s",
+      "result": {
+        "answer": "بموجب نظام العمل السعودي، يُسمح للعامل بالاستقالة من العمل بشرط تقديم إنهاء الخدمة بإشعار مسبق للجهة الموظفة. وفقًا للمادة 75 من نظام العمل السعودي، يجب على العامل الذي يعمل بعقد غير محدد المدة تقديم إشعار مسبق لمدة 30 يومًا على الأقل قبل ترك العمل، ما لم يتفق الطرفان على خلاف ذلك أو انتهى العقد لأسباب شرعية أخرى. أما العامل بعقد محدد المدة فيُلزم بالعمل حتى نهاية مدة العقد ما لم يوافق صاحب العمل على إنهاء العقد مبكرًا أو كان هناك سبب مشروع للإنهاء المبكر. وفي كل الأحوال، يجب الالتزام بفترة الإشعار المكتوبة حتى يسمح لصاحب العمل بالاستعداد للبحث عن بديل مناسب. الشروط تفصيلية أخرى قد تحتوي على بنود متعلقة بتسليم العمل وتسوية الحقوق المالية، ويُنصح بمراجعة المادة 75 وما يليها من نظام العمل السعودي لمزيد من التفاصيل.",
+        "sources": [
+          "نظام العمل السعودي، المادة 75",
+          "وزارة الموارد البشرية والتنمية الاجتماعية السعودية - نظام العمل"
+        ],
+        "jurisdiction": "Kingdom of Saudi Arabia",
+        "confidence": 0.95
+      }
+    },
+    {
+      "scenario_id": "EN_PROBATION_01",
+      "language": "English",
+      "category": "Probation",
+      "query": "Explain the rules regarding the probation period duration and extension under the Saudi Labor Law.",
+      "execution_time": "15.54s",
+      "result": {
+        "answer": "The provided legal excerpts do not contain any explicit provisions regarding the duration or extension of probation periods under the Saudi Labor Law. There is no mention of 'probation,' 'trial period,' or rules related to setting limits on probation periods or their extension possibilities. Consequently, from the supplied materials, no verified information can be given about probation period durations, extension requirements, or contractual conditions governing probation under Saudi Labor Law. To obtain accurate details on probation periods, one must refer to the full official Saudi Labor Law text or authoritative commentaries that address employment contracts and probation clauses.",
+        "sources": [],
+        "jurisdiction": "Kingdom of Saudi Arabia",
+        "confidence": 1.0
+      }
+    },
+    {
+      "scenario_id": "AR_TERMINATION_01",
+      "language": "Arabic",
+      "category": "Termination/EOSB",
+      "query": "هل يحق لصاحب العمل فصل الموظف دون مكافأة نهاية الخدمة؟ وما هي الحالات التي تسمح بذلك؟",
+      "execution_time": "10.51s",
+      "result": {
+        "answer": "بموجب نظام العمل في المملكة العربية السعودية، يحق لصاحب العمل فصل الموظف من دون مكافأة نهاية الخدمة في حالات محددة نص عليها القانون. ينصّ المادة 75 من نظام العمل السعودي على أن صاحب العمل يمكنه إنهاء عقد العمل دون إخطار مسبق أو دفع مكافأة نهاية الخدمة إذا ثبت على الموظف ارتكاب أحد الأفعال التي تستوجب الفصل التأديبي مثل: الإخلال بواجبات العمل المتفق عليها، ارتكاب أفعال لا أخلاقية أو جريمة مخلة بالشرف أو الامانة، أو الغياب المتكرر بدون سبب مشروع. في غير هذه الحالات، يلتزم صاحب العمل بدفع مكافأة نهاية الخدمة إذا كان الموظف مستوفياً لشروط استحقاقها. لذا، حالات الفصل دون مكافأة نهاية الخدمة مقيدة بالقانون ويجب أن تكون مدعومة بأسباب قانونية واضحة.",
+        "sources": [
+          "نظام العمل السعودي، خاصة المادة 75"
+        ],
+        "jurisdiction": "Kingdom of Saudi Arabia",
+        "confidence": 0.9
+      }
+    }
+  ]
+}
