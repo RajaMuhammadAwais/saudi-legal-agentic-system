@@ -8,17 +8,19 @@ This system utilizes a decentralized architecture of seven specialized agents to
 
 ### Key Features
 
+- **Agent Lightning Architecture**: High-speed multi-agent disaggregation for low-latency legal research.
 - **Sentence-Aware Chunking**: Optimized for Arabic legal text to maintain contextual integrity.
-- **Multi-Agent Orchestration**: Sequential processing through QueryPlanner, Retriever, Reranker, LegalExtractor, Verifier, Critic, and Synthesizer agents.
-- **Verification Priority**: Strict policy-based generation where only 100% verified claims are included in final answers.
+- **Parallel Multi-Agent Orchestration**: Asynchronous processing through QueryPlanner, Retriever, Verifier, Critic, and Synthesizer agents.
+- **Verification Priority**: Strict policy-based generation where only 100% verified claims are included in final answers (90-94% accuracy target).
 - **Research-Backed**: Based on SOTA components for Arabic RAG (BGE-M3, BGE-Reranker-v2-m3).
 
 ## Project Structure
 
-- `saudi_legal_system.py`: Main orchestration engine and agent logic.
-- `legal_pipeline.py`: Data ingestion and chunking pipeline.
-- `system_architecture_v2.md`: Detailed technical documentation.
-- `arabic_legal_rag_research.md`: Summary of research findings.
+- `saudi_legal_lightning.py`: **[LATEST]** Optimized high-speed orchestration engine using Agent Lightning principles.
+- `saudi_legal_system_real.py`: Real-world RAG implementation with document ingestion.
+- `lightning_optimization.md`: Technical documentation for Agent Lightning architecture.
+- `system_architecture_v2.md`: Core system design and multi-agent framework.
+- `saudi_labor_law.txt`: Extracted text from official Saudi Labor Law.
 
 ## Getting Started
 
