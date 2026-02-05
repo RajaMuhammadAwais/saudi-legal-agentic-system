@@ -91,3 +91,13 @@ A comprehensive bilingual test suite was executed on February 5, 2026, to evalua
 - **Zero Hallucination Policy**: In scenarios where the local knowledge base lacked specific details (Non-compete and Probation), the agent correctly reported the absence of information rather than hallucinating, maintaining a 1.0 confidence in its "no-data" verification.
 - **Arabic Optimization**: The system showed slightly faster execution times for Arabic queries, likely due to more direct keyword matching with the source text (`saudi_labor_law.txt`).
 - **Self-Improvement in Action**: During the tests, the agent generated specific optimization tips for handling missing legal terms and improving paragraph segmentation for better readability.
+
+### Self-Improvement Results (Feb 5, 2026)
+
+The following optimizations were automatically generated and integrated into the system's feedback loop:
+
+| Category | Optimization Tip | Target Agent | Impact |
+| :--- | :--- | :--- | :--- |
+| **Missing Terms** | Explicitly state the absence of specific articles (e.g., 'Article 80 not found') to maintain transparency and prevent hallucinations. | `LegalExtractor` | High Accuracy |
+| **Readability** | Implement structured paragraph segmentation with clear headers and distinct paragraphs for each legal rule. | `Synthesizer` | Better Readability |
+
