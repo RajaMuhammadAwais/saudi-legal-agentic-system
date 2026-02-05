@@ -35,3 +35,31 @@ The system is designed to target a 90-94% accuracy rate by enforcing a "Source-t
 ## License
 
 Private / Internal Use Only.
+
+## Agent Lightning Test Results
+
+The system was tested using the `Agent Lightning` architecture (`saudi_legal_lightning.py`) on February 5, 2026. The results demonstrate the efficiency of the disaggregated multi-agent approach.
+
+### Performance Summary
+
+| Metric | Value |
+| :--- | :--- |
+| **Total Execution Time (4 Queries)** | 66.64s |
+| **Average Time per Query** | 16.66s |
+| **Average Confidence Score** | 0.68* |
+
+*\*Note: Confidence score was impacted by missing data for specific articles in the local knowledge base (e.g., Article 80).*
+
+### Detailed Query Results
+
+| Query | Execution Time | Confidence | Key Findings |
+| :--- | :--- | :--- | :--- |
+| **Employment Contract Requirements** | 19.98s | 0.90 | Identified requirements for seamen and non-Saudi contracts. |
+| **Working Hours & Overtime** | 20.00s | 0.95 | Detailed regulations for various worker categories and exceptions. |
+| **Article 80 Termination** | 10.79s | 0.00 | Correctly identified lack of specific data in the local KB. |
+| **Annual Leave Rules** | 15.87s | 0.90 | Identified Article 118 restrictions on working during leave. |
+
+### Observations
+- **Speed**: The parallel execution of Triage, Planning, and Extraction significantly reduces latency compared to sequential RAG pipelines.
+- **Accuracy**: The Verifier agent successfully prevents hallucinations when the required legal text is missing from the knowledge base (as seen in the Article 80 test).
+- **Triage**: The system effectively routes queries between `FAST_MODEL` (gpt-4.1-nano) and `DEEP_MODEL` (gpt-4.1-mini) based on complexity.

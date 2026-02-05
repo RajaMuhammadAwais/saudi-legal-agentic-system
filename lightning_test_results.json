@@ -1,0 +1,50 @@
+{
+  "total_execution_time": "66.64s",
+  "average_time_per_query": "16.66s",
+  "results": [
+    {
+      "answer": "Under Saudi Labor Law, based strictly on the provided sources, the mandatory requirements for a valid employment contract are as follows: For seamen employment contracts governed by Article 170, the contract must be recorded on the vessel or appended thereto, drafted in clear language, and specify whether it is for a fixed period or a single voyage. If fixed-term, the exact duration must be stated; if for a single voyage, the contract must indicate the destination city or harbor and the specific stage of unloading or loading when the contract terminates. For employment contracts involving non-Saudis, the contract must be in writing and fixed-term. Additionally, the wage must cover all compensation components including commissions, allowances, increments, grants, or rewards related to the work. The provided sources do not list broader mandatory components such as employer/employee identification, job description, place of work, working hours, termination conditions, or Sharia law compliance explicitly, nor do they specify writing requirements for Saudi nationals’ contracts or the formalities of contract registration.",
+      "sources": [
+        "Article 170 of the Saudi Labor Law",
+        "Article 171 of the Saudi Labor Law",
+        "Legal provisions regarding non-Saudi employment contracts",
+        "Definitions and rules on wage components and work types under Saudi Labor Law"
+      ],
+      "jurisdiction": "Kingdom of Saudi Arabia",
+      "confidence": 0.9,
+      "query": "What are the mandatory requirements for a valid employment contract under Saudi Labor Law?",
+      "execution_time": "19.98s"
+    },
+    {
+      "answer": "In Saudi Arabia, labor law regulates working hours and overtime compensation with specific provisions and exceptions. Most worker categories including part-time, seasonal, and temporary workers are covered, except certain exemptions such as employer’s family members, small sea vessel workers, and some non-Saudi short-term assignments. Working hours exceeding the established weekly hours set by the employer are considered overtime. Work performed during official holidays and Islamic Eids is always treated as overtime. For exceptional cases like annual inventory and seasonal sales, workers may work up to 30 days per year, with a maximum of 10 hours daily or 60 hours weekly. Certain high-level positions and preparatory/supplementary work before or after official hours are exempt from standard working hour rules. The Minister of Labor holds authority to issue regulations regarding overtime rights, obligations, rest intervals, occupational safety, and other conditions tailored to worker categories. Employment contract conditions that conflict with the law are invalid. Notably, the provided legal texts do not specify explicit standard maximum working hours per day or week, exact overtime pay rates, maximum allowable overtime hours daily beyond exceptions, or mandated weekly rest days. These details require consultation of additional official legal or ministerial texts.",
+      "sources": [
+        "Saudi Labor Law - Provisions on Working Hours and Overtime",
+        "Ministerial Decisions on Labor Work Hours and Rest Periods",
+        "Articles 98 and 101 of the Saudi Labor Law"
+      ],
+      "jurisdiction": "Kingdom of Saudi Arabia",
+      "confidence": 0.95,
+      "query": "Explain the regulations regarding working hours and overtime compensation in Saudi Arabia.",
+      "execution_time": "20.00s"
+    },
+    {
+      "answer": "The provided source documents do not contain explicit information or procedural details regarding the termination of an employment contract by an employer due to employee misconduct under Article 80. As such, no verified legal procedure can be stated based on the current data. To accurately understand the legal procedure for termination under Article 80, it is necessary to consult the official text of the relevant labor law (likely the Saudi Labor Law) or authoritative legal sources from the Kingdom of Saudi Arabia.",
+      "sources": [],
+      "jurisdiction": "Kingdom of Saudi Arabia",
+      "confidence": 0.0,
+      "query": "What is the legal procedure for an employer to terminate a contract due to employee misconduct (Article 80)?",
+      "execution_time": "10.79s"
+    },
+    {
+      "answer": "The provided source documents do not contain explicit or detailed rules regarding annual leave entitlements for workers in Saudi Arabia. While Article 118 of the referenced labor law chapter states that a worker may not work for another employer while on any type of leave and that violations may result in wage forfeiture, there are no provisions in the supplied texts specifying the duration, accrual, eligibility, or scheduling of annual leave. Consequently, common claims such as entitlement to a minimum of 21 days of paid annual leave per year, increase to 30 days after 5 years of service, or employer obligations to grant and inform about leave cannot be substantiated based on these documents. For authoritative and comprehensive information, one should consult the official Saudi Labor Law issued by the Ministry of Human Resources and Social Development.",
+      "sources": [
+        "Article 118 of the provided Saudi Labor Law chapter",
+        "Partial texts and statutes relating to employment contracts, work hours, and training obligations within the supplied documents"
+      ],
+      "jurisdiction": "Kingdom of Saudi Arabia",
+      "confidence": 0.9,
+      "query": "What are the rules for annual leave for workers in Saudi Arabia?",
+      "execution_time": "15.87s"
+    }
+  ]
+}
