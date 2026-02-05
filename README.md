@@ -25,6 +25,7 @@ The system operates through a structured pipeline where each agent has a specifi
 The repository is organized into the following directories:
 
 - **`src/`**: Core source code for the multi-agent system.
+  - `saudi_legal_system_rgl.py`: **[NEW]** RGL-enhanced implementation using Reinforcement Learning with Guided Logic.
   - `saudi_legal_lightning.py`: Optimized high-speed orchestration engine with self-improvement.
   - `saudi_legal_system_real.py`: Real-world RAG implementation with document ingestion.
   - `legal_pipeline.py`: Data ingestion and chunking pipeline.
@@ -35,6 +36,7 @@ The repository is organized into the following directories:
 - **`data/`**: Legal datasets and knowledge base files.
   - `saudi_labor_law.txt`: Official Saudi Labor Law text.
 - **`tests/`**: Test suites and evaluation scripts.
+  - `test_rgl_agent.py`: Validation script for the RGL 'Think-Answer' protocol.
   - `test_lightning_agent.py`: Performance testing for the lightning architecture.
   - `test_bilingual_scenarios.py`: Cross-lingual evaluation.
   - `run_test_queries.py`: Batch query execution script.
@@ -47,6 +49,7 @@ The repository is organized into the following directories:
 
 ## Key Features
 
+- **RGL (Reinforcement Learning with Guided Logic)**: Implements a 'Think-Answer' protocol that forces agents to reason explicitly before providing answers, simulating RL-based reasoning dynamics.
 - **Agent Lightning Architecture**: High-speed multi-agent disaggregation for low-latency legal research.
 - **Self-Improving Feedback Loop**: Automated performance analysis and prompt optimization based on execution history.
 - **Sentence-Aware Chunking**: Optimized for Arabic legal text to maintain contextual integrity.
