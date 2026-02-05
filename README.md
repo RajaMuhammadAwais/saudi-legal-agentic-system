@@ -27,7 +27,6 @@ The repository is organized into the following directories:
 - **`src/`**: Core source code for the multi-agent system.
   - `saudi_legal_lightning.py`: Optimized high-speed orchestration engine with self-improvement.
   - `saudi_legal_system_real.py`: Real-world RAG implementation with document ingestion.
-  - `saudi_legal_system.py`: Base multi-agent system implementation.
   - `legal_pipeline.py`: Data ingestion and chunking pipeline.
 - **`docs/`**: Technical documentation and research papers.
   - `system_architecture_v2.md`: Core system design and multi-agent framework.
