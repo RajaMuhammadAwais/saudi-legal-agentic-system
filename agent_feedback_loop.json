@@ -5,5 +5,26 @@
     "timestamp": 1770269721.021185,
     "query": "What are the rules for annual leave for workers in Saudi Arabia?",
     "role": "Synthesizer"
+  },
+  {
+    "optimization_tip": "When legal terms are missing from the local knowledge base, explicitly state the absence of specific articles (e.g., 'Article 80 not found') to maintain transparency and prevent potential hallucinations during synthesis.",
+    "score": 0.95,
+    "timestamp": 1770269722.0,
+    "query": "Article 80 Termination",
+    "role": "LegalExtractor"
+  },
+  {
+    "optimization_tip": "Improve readability by implementing structured paragraph segmentation, using clear headers for different legal sections, and ensuring each distinct legal rule is presented in its own paragraph.",
+    "score": 0.92,
+    "timestamp": 1770269723.0,
+    "query": "Working Hours & Overtime",
+    "role": "Synthesizer"
+  },
+  {
+    "optimization_tip": "Ensure the LegalExtractor extracts and includes complete and specific statutory provisions related to annual leave, such as Articles 109 and 110 of the Saudi Labor Law, which explicitly state annual leave entitlement and conditions. This would improve accuracy and completeness in the synthesized response.",
+    "score": 0.6,
+    "timestamp": 1770275655.246099,
+    "query": "What are the rules for annual leave for workers in Saudi Arabia?",
+    "role": "Synthesizer"
   }
 ]
