@@ -6,6 +6,20 @@ A research-based multi-agent orchestration system for Saudi Arabian legal resear
 
 This system utilizes a decentralized architecture of seven specialized agents to process, verify, and synthesize legal information from Saudi Arabian statutes, Royal Decrees, and regulations.
 
+![Agents Flow Diagram](agents_flow.png)
+
+### Agents Flow
+
+The system operates through a structured pipeline where each agent has a specific responsibility:
+
+1.  **QueryPlanner**: Analyzes the user query and breaks it down into actionable legal search tasks.
+2.  **Retriever**: Interfaces with the Vector Database to fetch relevant document chunks using semantic search.
+3.  **Reranker**: Prioritizes the retrieved documents based on their direct relevance to the specific legal query.
+4.  **LegalExtractor**: Identifies and extracts key legal entities, articles, and statutes from the ranked context.
+5.  **Verifier**: Performs a "Source-to-Claim" validation to ensure all extracted information is explicitly supported by the source text.
+6.  **Critic**: Acts as an adversarial validator to detect potential misinterpretations or jurisdictional errors.
+7.  **Synthesizer**: Compiles the verified information into a structured JSON output with citations and confidence scores.
+
 ### Key Features
 
 - **Agent Lightning Architecture**: High-speed multi-agent disaggregation for low-latency legal research.
